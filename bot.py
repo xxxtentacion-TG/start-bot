@@ -1,4 +1,5 @@
 import os
+from pyrogram import Client as bot
 from program import Filters
 from program.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 bot = Client('mybot', bot_token = "1853498659:AAFdnSWzBEA4wqp8qpnViDKyvOSjV4y9-vU", api_id = 3020564, api_hash = "91c026fadfdc442f504a0bd3e5c8cd18")
