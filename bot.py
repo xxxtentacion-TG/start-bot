@@ -8,6 +8,6 @@ def start(client, message):
     message.reply(f"Hello {message.from_user.first_name} how are you",
     reply_markup = InlinekeyboardMarkup([[InlineKeyboardButton("Owner", url = "t.me/xxxtentacion_OF_TG")]]))
 
-bot.run()
+Client.run()
 
 
