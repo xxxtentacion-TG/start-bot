@@ -9,3 +9,5 @@ def start(client, message)
     reply_markup = InlinekeyboardMarkup([[InlineKeyboardButton("Owner", url = "t.me/xxxtentacion_OF_TG")]]))
 
 bot.run()
+
+bot = Client('mybot', bot_token = "1853498659:AAFdnSWzBEA4wqp8qpnViDKyvOSjV4y9-vU", api_id = 3020564, api_hash = "91c026fadfdc442f504a0bd3e5c8cd18")
