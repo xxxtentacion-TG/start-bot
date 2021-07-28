@@ -1,5 +1,5 @@
 import os
-from program import client as bot
+from program import Client as bot
 from program import Filters
 from program.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 
