@@ -28,12 +28,6 @@ bot.run()
 
 @bot.on_message(filters.command(['help']))
 def start(client, message):
-    await bot.send_photo(
-        chat_id=update.chat.id,
-        photo="https://telegra.ph/file/faee21e9b4c069c2b4e0f.jpg",
-        caption="podeyyy",
-        parse_mode="html",
-        reply_to_message_id=update.message_id
-    )
+    message.reply(f"Hello {message.from_user.first_name} how are you",    
 
 bot.run()
