@@ -25,9 +25,3 @@ def start(client, message):
      )
 
 bot.run()
-
-@bot.on_message(filters.command(['help']))
-def start(client, message):
-    message.reply(f"Goway stupid",    
-
-bot.run()
