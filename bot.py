@@ -28,6 +28,6 @@ bot.run()
 
 @bot.on_message(filters.command(['help']))
 def start(client, message):
-    message.reply(f"Hello {message.from_user.first_name} how are you",    
+    message.reply(f"Goway stupid",    
 
 bot.run()
