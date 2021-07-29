@@ -14,13 +14,11 @@ def start(client, message):
     reply_markup = InlinekeyboardMarkup(
       [
          [
-            InlineKeyboardButton(
-            text ="Owner",
-            url = "t.me/xxxtentacion_OF_TG")
+            InlineKeyboardButton('Owner', url='https://t.me/XXXTENTACION_OF_TG'),
          ]
       ]
       )
-      )
+     )
 
 bot.run()
 
