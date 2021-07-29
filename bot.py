@@ -11,7 +11,7 @@ bot = Client('mybot',
 @bot.on_message(filters.command(['start']))
 def start(client, message):
     message.reply(f"Hello {message.from_user.first_name} how are you",
-    reply_markup = InlinekeyboardMarkup(
+    reply_markup = InlineKeyboardMarkup(
       [
          [
             InlineKeyboardButton('Owner', url='https://t.me/XXXTENTACION_OF_TG'),
