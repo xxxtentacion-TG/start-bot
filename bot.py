@@ -32,21 +32,8 @@ def start(client, message):
         chat_id=update.chat.id,
         photo="https://telegra.ph/file/faee21e9b4c069c2b4e0f.jpg",
         caption="podeyyy",
-        reply_markup=reply_markup,
         parse_mode="html",
         reply_to_message_id=update.message_id
-    )
-    reply_markup = InlineKeyboardMarkup(
-      [
-         [
-            InlineKeyboardButton('Owner', url='https://t.me/XXXTENTACION_OF_TG'),
-            InlineKeyboardButton('GROUP', url='https://t.me/MGMOVIEGRAM')
-         ],
-         [
-            InlineKeyboardButton('GROUP', url='https://t.me/MGMOVIEGRAM')
-         ]
-      ]
-     )
     )
 
 bot.run()
