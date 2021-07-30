@@ -1,6 +1,6 @@
 import os
 from pyrogram import Client, filters
-from pyrogram.types import ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton, Message
+from pyrogram.types import ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, Message
 
 bot = Client('mybot',
       bot_token="1853498659:AAFdnSWzBEA4wqp8qpnViDKyvOSjV4y9-vU",
@@ -25,8 +25,7 @@ def start(client, message):
      )
 @bot.on_message(filters.command(['help']))
 def help(client, message):
-    photo.reply="https://telegra.ph/file/e7a6d96ab0961d60f75a0.jpg",
-    caption=f"{message.from_user.first_name} What you Want",
+    message.reply(f"{message.from_user.first_name} What you Want",
     reply_markup = InlineKeyboardMarkup(
     [
          [
