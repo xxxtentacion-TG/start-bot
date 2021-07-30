@@ -1,6 +1,9 @@
 import os
 from pyrogram import Client, filters
-from pyrogram.types import ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, Message
+from pyrogram.types import Message
+from pyrogram.types import InlineKeyboardMarkup
+from pyrogram.types import InlineKeyboardButton
+from pyrogram.types import CallbackQuery
 
 bot = Client('mybot',
       bot_token="1853498659:AAFdnSWzBEA4wqp8qpnViDKyvOSjV4y9-vU",
@@ -47,7 +50,7 @@ def about(client, message):
          [
             InlineKeyboardButton('Owner', url='https://t.me/XXXTENTACION_OF_TG'),
             InlineKeyboardButton('group', url='https://t.me/MGMOVIEGRAM')
-         ],
+         ]
          [
             InlineKeyboardButton('home', callback_data='start'),
             InlineKeyboardButton('help', callback_data="help"),
@@ -55,7 +58,45 @@ def about(client, message):
       ]
       )
      )
+#➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️
+@bot.on_callback_query()
+def common(client, query: CallbackQuery):
+    data = query.data
+    user_id = query.from_user.id
+    user_name = query.from_user.first_name
+    mention = "[" + user_name + "](tg://user?id=" + str(user_id) + ")"
 
+    if data == "start":
+        query.message.edit(f"your start message.",
+        reply_markup = InlineKeyboardMarkup(  
+        [
+           [
+              InlineKeyboardButton('Owner', url='https://t.me/XXXTENTACION_OF_TG')
+           ]
+         ]
+       ))
+
+    if data == "help":
+        query.message.edit(f"your help message.",
+        reply_markup = InlineKeyboardMarkup(  
+        [
+           [
+              InlineKeyboardButton('Owner', url='https://t.me/XXXTENTACION_OF_TG')
+           ]
+         ]
+       ))
+
+    if data == "about":
+        query.message.edit(f"your about message.",
+        reply_markup = InlineKeyboardMarkup(  
+        [
+           [
+              InlineKeyboardButton('Owner', url='https://t.me/XXXTENTACION_OF_TG')
+           ]
+         ]
+       ))
+#➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️
+   
 
 bot.run()
 
