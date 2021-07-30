@@ -39,6 +39,22 @@ def help(client, message):
       ]
       )
      )
+@bot.on_message(filters.command(['about']))
+def about(client, message):
+    message.reply(f"{message.from_user.first_name} What you Want",
+    reply_markup = InlineKeyboardMarkup(
+    [
+         [
+            InlineKeyboardButton('Owner', url='https://t.me/XXXTENTACION_OF_TG'),
+            InlineKeyboardButton('group', url='https://t.me/MGMOVIEGRAM')
+         ],
+         [
+            InlineKeyboardButton('home', callback_data='start'),
+            InlineKeyboardButton('help', callback_data="help"),
+         ]
+      ]
+      )
+     )
 
 
 bot.run()
