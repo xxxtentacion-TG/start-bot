@@ -8,7 +8,7 @@ bot = Client('mybot',
       api_hash="91c026fadfdc442f504a0bd3e5c8cd18",
       )
 
-@Client.on_message(filters.command(['start']))
+@bot.on_message(filters.command(['start']))
 def start(client, message):
     message.reply(f"Hello {message.from_user.first_name} how are you",
     reply_markup = InlineKeyboardMarkup(
@@ -24,4 +24,4 @@ def start(client, message):
       )
      )
 
-Client.run()
+bot.run()
