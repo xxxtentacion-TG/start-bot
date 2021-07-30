@@ -25,7 +25,7 @@ def start(client, message):
      )
 @bot.on_message(filters.command(['help']))
 def help(client, message):
-    await bot.send_photo
+    await bot.send_photo(
       photo="https://telegra.ph/file/e7a6d96ab0961d60f75a0.jpg",
       caption=f"{message.from_user.first_name} What you Want",
       reply_markup = InlineKeyboardMarkup(
