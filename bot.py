@@ -23,6 +23,22 @@ def start(client, message):
       ]
       )
      )
+@bot.on_message(filters.command(['help']))
+def help(client, message):
+    message.reply(f"{message.from_user.first_name} What you Want",
+    reply_markup = InlineKeyboardMarkup(
+    [
+         [
+            InlineKeyboardButton('Owner', url='https://t.me/XXXTENTACION_OF_TG'),
+            InlineKeyboardButton('GROUP', url='https://t.me/MGMOVIEGRAM')
+         ],
+         [
+            InlineKeyboardButton('GROUP', url='https://t.me/MGMOVIEGRAM')
+         ]
+      ]
+      )
+     )
+
 
 bot.run()
 
