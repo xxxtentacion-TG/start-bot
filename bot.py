@@ -15,10 +15,10 @@ def start(client, message):
       [
          [
             InlineKeyboardButton('Owner', url='https://t.me/XXXTENTACION_OF_TG'),
-            InlineKeyboardButton('GROUP', url='https://t.me/MGMOVIEGRAM')
+            InlineKeyboardButton('group', url='https://t.me/MGMOVIEGRAM')
          ],
          [
-            InlineKeyboardButton('GROUP', url='https://t.me/MGMOVIEGRAM')
+            InlineKeyboardButton('help', callback_data="help"),
          ]
       ]
       )
