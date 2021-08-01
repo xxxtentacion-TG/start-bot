@@ -1,2 +1,2 @@
-Pyrogram
+Pyrogram # it is very important for running a code it was a Telegrapm lybrary
 TgCrypto
