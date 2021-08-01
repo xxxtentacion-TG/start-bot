@@ -1,20 +1,17 @@
 import os
 from pyrogram import Client, filters
-from pyrogram.types import Message
-from pyrogram.types import InlineKeyboardMarkup
-from pyrogram.types import InlineKeyboardButton
-from pyrogram.types import CallbackQuery
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 
-bot = Client('mybot',
-      bot_token="1853498659:AAFdnSWzBEA4wqp8qpnViDKyvOSjV4y9-vU",
-      api_id=3020564,
-      api_hash="91c026fadfdc442f504a0bd3e5c8cd18",
+bot = Client('test_bot', # your choice | # to run a code its important 
+      bot_token="1853498659:AAFdnSWzBEA4wqp8qpnViDKyvOSjV4y9-vU", #bot token
+      api_id=3020564, # app id
+      api_hash="91c026fadfdc442f504a0bd3e5c8cd18", # api hash 
       )
 
-@bot.on_message(filters.command(['start']))
-def start(client, message):
-    message.reply(f"Hello {message.from_user.first_name} how are you",
-    reply_markup = InlineKeyboardMarkup(
+@bot.on_message(filters.command(['start'])) # commmand
+def start(client, message): 
+    message.reply(f"Hello {message.from_user.first_name} how are you", #reply message 
+    reply_markup = InlineKeyboardMarkup( # button
       [
          [
             InlineKeyboardButton('Owner', url='https://t.me/XXXTENTACION_OF_TG'),
@@ -98,6 +95,6 @@ def common(client, query: CallbackQuery):
 #➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️
    
 
-bot.run()
+bot.run() # to run a code its important 
 
 
