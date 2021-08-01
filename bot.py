@@ -1,6 +1,6 @@
-import os
-from pyrogram import Client, filters
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
+import os #your choice 
+from pyrogram import Client, filters #important 
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery # for buttons
 
 bot = Client('test_bot', # your choice | # to run a code its important 
       bot_token="1853498659:AAFdnSWzBEA4wqp8qpnViDKyvOSjV4y9-vU", #bot token
