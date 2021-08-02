@@ -1,6 +1,5 @@
 Pyrogram
-
 TgCrypto
 
-#it is very important for running a code it was a Telegrapm lybrary
+"""it is very important for running a code it was a Telegram library"""
 
